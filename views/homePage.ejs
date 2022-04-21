@@ -1,0 +1,14 @@
+<h1 id="title">Click on any book to See details!</h1>
+<% books.forEach(s=>
+    { %> 
+
+        <div id="titleContainer">
+        <p>
+        <a href="/books/<%=s.numId%>">
+        <%= s.bookName %>
+        </a>
+        </p>
+        </div>
+    </hr>
+    <% });
+%>

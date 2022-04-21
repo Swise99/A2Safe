@@ -1,0 +1,18 @@
+<h1>Add a New Book!</h1>
+<form action="/AddNewBookSend" name="Form" method="POST" onsubmit="return validateForm()">
+    <ul>
+        <li>
+            <h3>Book Name:</h3>
+            <input type="text" name="bookName" placeholder="Name of Book">
+        </li>
+        <li>
+            <h3>Author Name:</h3>
+            <input type="text" name="authorName" placeholder="Name of Author">
+        </li>
+        <li>
+            <h3>Amazon Link:</h3>
+            <input type="text" name="amazonLink" placeholder="Amazon URL link">
+        </li>
+    </ul>
+    <button type="submit" name="submit">Submit</button>
+</form>

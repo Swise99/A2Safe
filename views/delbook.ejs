@@ -1,0 +1,15 @@
+<h1>To delete a book click on the red X</h1>
+<% books.forEach(s=>
+    { %> 
+        
+        <div id="titleContainer">
+        <p>     
+        <a href="/DeleteABook/<%=s.numId%>/delete?_method=DELETE" >
+            <span id="delete" onclick="return confirm('Are you sure you want to delete this book?')"></span>
+        </a>
+        <%= s.bookName %>
+        </p>
+        </div>
+    </hr>
+    <% });
+%>
